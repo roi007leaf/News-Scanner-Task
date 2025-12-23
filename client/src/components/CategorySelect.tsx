@@ -13,7 +13,7 @@ interface Option {
 
 interface SelectProps {
   options?: Option[];
-  onChange?: any;
+  onChange?: (value: string) => void;
   selectedOptions?: string;
 }
 

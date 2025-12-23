@@ -1,7 +1,7 @@
 import { Input } from "./ui/input";
 
 interface QueryInputProps {
-  onChange?: any;
+  onChange?: (value: string) => void;
   value?: string;
 }
 
