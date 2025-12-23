@@ -3,12 +3,12 @@ import { NewsArticle, SummaryResponse } from "../api/news";
 import { useSummarizeArticleMutation } from "../hooks/newsHooks";
 import { cn } from "../lib/utils";
 import {
-    NewsCardDescription,
-    NewsCardImage,
-    NewsCardSourceBar,
-    NewsCardSummaryButton,
-    NewsCardSummarySection,
-    NewsCardTitle,
+  NewsCardDescription,
+  NewsCardImage,
+  NewsCardSourceBar,
+  NewsCardSummaryButton,
+  NewsCardSummarySection,
+  NewsCardTitle,
 } from "./news-card";
 
 interface NewsCardProps {
@@ -61,7 +61,7 @@ export const NewsCard = ({
     <div
       className={cn(
         "flex flex-col",
-        "w-[416px]",
+        "w-full max-w-[416px]",
         "bg-white rounded-[12px] p-[10px]",
         "shadow-[0_0_32px_rgba(0,0,0,0.07)]",
         "transition-shadow duration-200 hover:shadow-[0_0_40px_rgba(0,0,0,0.12)]"

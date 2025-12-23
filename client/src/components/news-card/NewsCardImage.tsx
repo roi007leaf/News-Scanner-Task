@@ -12,7 +12,7 @@ export function NewsCardImage({
   return (
     <div
       className={cn(
-        "w-[396px] h-[224px] rounded-[12px] overflow-hidden bg-gray-100 flex-shrink-0",
+        "w-full h-[224px] rounded-[12px] overflow-hidden bg-gray-100",
         className
       )}
     >

@@ -182,7 +182,7 @@ export const NewsDisplay = ({
   }
 
   return (
-    <div className="flex flex-col gap-8">
+    <div className="flex flex-col gap-6">
       {articles.length > 0 && (
         <BulkSummaryFab
           count={summarizeCount}
@@ -194,7 +194,7 @@ export const NewsDisplay = ({
 
       <div
         className={cn(
-          "grid gap-[48px] items-start",
+          "grid gap-8 items-start justify-items-center",
           "grid-cols-1 md:grid-cols-2 xl:grid-cols-3"
         )}
       >

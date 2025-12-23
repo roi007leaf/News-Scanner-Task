@@ -25,14 +25,14 @@ function App() {
   }, []);
 
   return (
-    <div className="p-12 flex flex-col gap-12">
+    <div className="px-4 py-6 sm:px-6 sm:py-8 lg:px-8 flex flex-col gap-6 sm:gap-8">
       <header className="flex items-center gap-1.5">
         <img src="/logo.svg" alt="News Scanner Logo" className="h-4 w-[77px]" />
         <div className="text-xl font-semibold text-black leading-6">
           News Scanner
         </div>
       </header>
-      <div className="flex items-end gap-6">
+      <div className="flex flex-col sm:flex-row sm:items-end gap-4">
         <QueryInput value={query} onChange={setQuery} />
 
         <CategorySelect

@@ -1,9 +1,9 @@
 import {
-  Select,
-  SelectContent,
-  SelectItem,
-  SelectTrigger,
-  SelectValue,
+    Select,
+    SelectContent,
+    SelectItem,
+    SelectTrigger,
+    SelectValue,
 } from "./ui/select";
 
 interface Option {
@@ -27,7 +27,7 @@ export const CategorySelect = ({
   };
 
   return (
-    <div className="flex flex-col gap-2 w-[300px]">
+    <div className="flex flex-col gap-2 w-full sm:w-[300px]">
       <label
         htmlFor="category-select"
         className="text-sm font-medium text-gray-700"

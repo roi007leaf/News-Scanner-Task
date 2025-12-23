@@ -10,12 +10,12 @@ export function NewsCardSummarySection({
   isExpanded: boolean;
   suppressSpacing?: boolean;
 }) {
-  const marginClass = suppressSpacing ? "mt-0" : isExpanded ? "mt-3" : "mt-0";
+  const marginClass = suppressSpacing ? "mt-0" : isExpanded ? "mt-2" : "mt-0";
 
   return (
     <div
       className={cn(
-        "space-y-3 overflow-hidden transition-all duration-300 ease-in-out",
+        "space-y-2 overflow-hidden transition-all duration-300 ease-in-out",
         isExpanded ? "max-h-[500px] opacity-100" : "max-h-0 opacity-0",
         marginClass
       )}
